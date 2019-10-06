@@ -1,0 +1,18 @@
+<h1>ocApp</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+
+  <app-post-list-component *ngFor="let post of posts"
+                            [posttitle] = "post.title"
+                           [postcontent]="post.content"
+                           [postloveIts]="post.loveIts"
+                           [postcreated_at]="post.created_at"
+  >
+
+  </app-post-list-component>
+      </ul>
+    </div>
+  </div>
+</div>
